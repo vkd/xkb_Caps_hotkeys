@@ -1,0 +1,97 @@
+default  partial alphanumeric_keys modifier_keys
+xkb_symbols "basic" {
+
+    name[Group1]= "English (US)";
+
+    key <TLDE> {	[     grave,	asciitilde	]	};
+    key <AE01> {	[	  1,	exclam 		]	};
+    key <AE02> {	[	  2,	at		]	};
+    key <AE03> {	[	  3,	numbersign	]	};
+    key <AE04> {	[	  4,	dollar		]	};
+    key <AE05> {	[	  5,	percent		]	};
+    key <AE06> {	[	  6,	asciicircum	]	};
+    key <AE07> {	[	  7,	ampersand	]	};
+    key <AE08> {	[	  8,	asterisk	]	};
+    key <AE09> {	[	  9,	parenleft	]	};
+    key <AE10> {	[	  0,	parenright	]	};
+    key <AE11> {	[     minus,	underscore	]	};
+    key <AE12> {	[     equal,	plus		]	};
+
+    key <AD01> {	[	  q,	Q 		]	};
+    key <AD02> {	[	  w,	W		]	};
+    key <AD03> {	[	  e,	E		]	};
+    key <AD04> {	[	  r,	R		]	};
+    key <AD05> {	[	  t,	T		]	};
+    key <AD06> {	[	  y,	Y		]	};
+    key <AD07> {
+	type = "ALPHABETIC_CAPS_ARROW",
+	symbols[Group1] = [u,	U],
+	symbols[Group2] = [BackSpace, BackSpace]
+	};
+    key <AD08> {
+	type = "ALPHABETIC_CAPS_ARROW",
+	symbols[Group1] = [i, I],
+	symbols[Group2] = [Up, Up]
+	};
+    key <AD09> {
+	type = "ALPHABETIC_CAPS_ARROW",
+	symbols[Group1] = [o,	O],
+	symbols[Group2] = [Delete, Delete]
+	};
+    key <AD10> {
+	type = "ALPHABETIC_CAPS_ARROW",
+	symbols[Group1] = [p,	P],
+	symbols[Group2] = [Prior, Prior]
+	};
+    key <AD11> {	[ bracketleft,	braceleft	]	};
+    key <AD12> {	[ bracketright,	braceright	]	};
+
+    key <AC01> {	[	  a,	A 		]	};
+    key <AC02> {	[	  s,	S		]	};
+    key <AC03> {	[	  d,	D		]	};
+    key <AC04> {	[	  f,	F		]	};
+    key <AC05> {	[	  g,	G		]	};
+    key <AC06> {	[	  h,	H		]	};
+    key <AC07> {
+	type = "ALPHABETIC_CAPS_ARROW",
+	symbols[Group1] = [j,	J],
+	symbols[Group2] = [Left, Left]
+	};
+    key <AC08> {
+	type = "ALPHABETIC_CAPS_ARROW",
+	symbols[Group1] = [k,	K],
+	symbols[Group2] = [Down, Down]
+	};
+    key <AC09> {
+	type = "ALPHABETIC_CAPS_ARROW",
+	symbols[Group1] = [l,	L],
+	symbols[Group2] = [Right, Right]
+	};
+    key <AC10> {
+	type = "ALPHABETIC_CAPS_ARROW",
+	symbols[Group1] = [semicolon,	colon],
+	symbols[Group2] = [Next, Next]
+	};
+    key <AC11> {	[ apostrophe,	quotedbl	]	};
+
+    key <AB01> {	[	  z,	Z 		]	};
+    key <AB02> {	[	  x,	X		]	};
+    key <AB03> {	[	  c,	C		]	};
+    key <AB04> {	[	  v,	V		]	};
+    key <AB05> {	[	  b,	B		]	};
+    key <AB06> {	[	  n,	N		]	};
+    key <AB07> {
+	type = "ALPHABETIC_CAPS_ARROW",
+	symbols[Group1] = [m,	M],
+	symbols[Group2] = [Home, Home]
+	};
+    key <AB08> {
+	type = "ALPHABETIC_CAPS_ARROW",
+	symbols[Group1] = [comma,	less],
+	symbols[Group2] = [End, End]
+	};
+    key <AB09> {	[    period,	greater		]	};
+    key <AB10> {	[     slash,	question	]	};
+
+    key <BKSL> {	[ backslash,         bar	]	};
+};
