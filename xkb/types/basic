@@ -27,9 +27,10 @@ default xkb_types "basic" {
     };
 
     type "ALPHABETIC_CAPS_ARROW" {
-        modifiers = Shift+Lock;
+        modifiers = Shift+Mod5;
         map[Shift] = Level2;
-        map[Lock] = Level3;
+        map[Mod5] = Level3;
+        map[Mod5+Shift] = level3;
         level_name[Level1] = "Base";
         level_name[Level2] = "Shift";
         level_name[Level3] = "Caps";
