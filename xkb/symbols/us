@@ -25,23 +25,23 @@ xkb_symbols "basic" {
     key <AD06> {	[	  y,	Y		]	};
     key <AD07> {
 	type = "ALPHABETIC_CAPS_ARROW",
-	symbols[Group1] = [u,	U],
-	symbols[Group2] = [BackSpace, BackSpace]
+	[u,	U, BackSpace],	
+        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<BKSP>)]
 	};
     key <AD08> {
 	type = "ALPHABETIC_CAPS_ARROW",
-	symbols[Group1] = [i, I],
-	symbols[Group2] = [Up, Up]
+	[i, I, Up],	
+        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<UP>)]
 	};
     key <AD09> {
 	type = "ALPHABETIC_CAPS_ARROW",
-	symbols[Group1] = [o,	O],
-	symbols[Group2] = [Delete, Delete]
+	[o,	O, Delete],	
+        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<DELE>)]
 	};
     key <AD10> {
 	type = "ALPHABETIC_CAPS_ARROW",
-	symbols[Group1] = [p,	P],
-	symbols[Group2] = [Prior, Prior]
+	[p,	P, Prior],	
+        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<PGUP>)]
 	};
     key <AD11> {	[ bracketleft,	braceleft	]	};
     key <AD12> {	[ bracketright,	braceright	]	};
@@ -52,25 +52,26 @@ xkb_symbols "basic" {
     key <AC04> {	[	  f,	F		]	};
     key <AC05> {	[	  g,	G		]	};
     key <AC06> {	[	  h,	H		]	};
+
     key <AC07> {
 	type = "ALPHABETIC_CAPS_ARROW",
-	symbols[Group1] = [j,	J],
-	symbols[Group2] = [Left, Left]
+	[j,	J, Left],	
+        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<LEFT>)]
 	};
     key <AC08> {
 	type = "ALPHABETIC_CAPS_ARROW",
-	symbols[Group1] = [k,	K],
-	symbols[Group2] = [Down, Down]
+	[k,	K, Down],	
+        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<DOWN>)]
 	};
     key <AC09> {
 	type = "ALPHABETIC_CAPS_ARROW",
-	symbols[Group1] = [l,	L],
-	symbols[Group2] = [Right, Right]
+	[l,	L, Right],	
+        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<RGHT>)]
 	};
     key <AC10> {
 	type = "ALPHABETIC_CAPS_ARROW",
-	symbols[Group1] = [semicolon,	colon],
-	symbols[Group2] = [Next, Next]
+	[semicolon,	colon],	
+        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<PGDN>)]
 	};
     key <AC11> {	[ apostrophe,	quotedbl	]	};
 
@@ -82,13 +83,13 @@ xkb_symbols "basic" {
     key <AB06> {	[	  n,	N		]	};
     key <AB07> {
 	type = "ALPHABETIC_CAPS_ARROW",
-	symbols[Group1] = [m,	M],
-	symbols[Group2] = [Home, Home]
+	[m,	M],	
+        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<HOME>)]
 	};
     key <AB08> {
 	type = "ALPHABETIC_CAPS_ARROW",
-	symbols[Group1] = [comma,	less],
-	symbols[Group2] = [End, End]
+	[comma, less],	
+        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<END>)]
 	};
     key <AB09> {	[    period,	greater		]	};
     key <AB10> {	[     slash,	question	]	};
