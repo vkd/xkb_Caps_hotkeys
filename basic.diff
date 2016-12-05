@@ -1,0 +1,16 @@
+--- /usr/share/X11/xkb_bak/types/basic	2016-12-06 00:08:06.724917409 +0300
++++ /usr/share/X11/xkb/types/basic	2016-12-06 00:20:15.679590322 +0300
+@@ -27,4 +27,13 @@
+ 	level_name[Level2] = "Caps";
+     };
+ 
++    type "ALPHABETIC_CAPS_ARROW" {
++        modifiers = Shift+Mod5;
++        map[Shift] = Level2;
++        map[Mod5] = Level3;
++        map[Mod5+Shift] = level3;
++        level_name[Level1] = "Base";
++        level_name[Level2] = "Shift";
++        level_name[Level3] = "Caps";
++    };
+ };

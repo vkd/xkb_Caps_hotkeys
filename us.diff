@@ -1,0 +1,83 @@
+--- /usr/share/X11/xkb_bak/symbols/us	2016-12-06 00:08:06.716917379 +0300
++++ /usr/share/X11/xkb/symbols/us	2016-12-06 00:18:09.183126489 +0300
+@@ -23,10 +23,26 @@
+     key <AD04> {	[	  r,	R		]	};
+     key <AD05> {	[	  t,	T		]	};
+     key <AD06> {	[	  y,	Y		]	};
+-    key <AD07> {	[	  u,	U		]	};
+-    key <AD08> {	[	  i,	I		]	};
+-    key <AD09> {	[	  o,	O		]	};
+-    key <AD10> {	[	  p,	P		]	};
++    key <AD07> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [u, U, BackSpace],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<BKSP>)]
++    };
++    key <AD08> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [i, I, Up],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<UP>)]
++    };
++    key <AD09> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [o, O, Delete],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<DELE>)]
++    };
++    key <AD10> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [p, P, Prior],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<PGUP>)]
++    };
+     key <AD11> {	[ bracketleft,	braceleft	]	};
+     key <AD12> {	[ bracketright,	braceright	]	};
+
+@@ -36,10 +52,26 @@
+     key <AC04> {	[	  f,	F		]	};
+     key <AC05> {	[	  g,	G		]	};
+     key <AC06> {	[	  h,	H		]	};
+-    key <AC07> {	[	  j,	J		]	};
+-    key <AC08> {	[	  k,	K		]	};
+-    key <AC09> {	[	  l,	L		]	};
+-    key <AC10> {	[ semicolon,	colon		]	};
++    key <AC07> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [j, J, Left],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<LEFT>)]
++    };
++    key <AC08> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [k, K, Down],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<DOWN>)]
++    };
++    key <AC09> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [l, L, Right],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<RGHT>)]
++    };
++    key <AC10> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [semicolon, colon],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<PGDN>)]
++    };
+     key <AC11> {	[ apostrophe,	quotedbl	]	};
+
+     key <AB01> {	[	  z,	Z 		]	};
+@@ -48,8 +80,16 @@
+     key <AB04> {	[	  v,	V		]	};
+     key <AB05> {	[	  b,	B		]	};
+     key <AB06> {	[	  n,	N		]	};
+-    key <AB07> {	[	  m,	M		]	};
+-    key <AB08> {	[     comma,	less		]	};
++    key <AB07> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [m, M],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<HOME>)]
++    };
++    key <AB08> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [comma, less],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<END>)]
++    };
+     key <AB09> {	[    period,	greater		]	};
+     key <AB10> {	[     slash,	question	]	};
+

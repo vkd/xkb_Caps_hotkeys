@@ -1,0 +1,83 @@
+--- /usr/share/X11/xkb_bak/symbols/ru	2016-12-06 00:08:06.704917335 +0300
++++ /usr/share/X11/xkb/symbols/ru	2016-12-06 00:14:53.758409911 +0300
+@@ -48,10 +48,26 @@
+     key <AD04> { [       Cyrillic_ka,       Cyrillic_KA  ] };
+     key <AD05> { [       Cyrillic_ie,       Cyrillic_IE  ] };
+     key <AD06> { [       Cyrillic_en,       Cyrillic_EN  ] };
+-    key <AD07> { [      Cyrillic_ghe,      Cyrillic_GHE  ] };
+-    key <AD08> { [      Cyrillic_sha,      Cyrillic_SHA  ] };
+-    key <AD09> { [    Cyrillic_shcha,    Cyrillic_SHCHA  ] };
+-    key <AD10> { [       Cyrillic_ze,       Cyrillic_ZE  ] };
++    key <AD07> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [Cyrillic_ghe,    Cyrillic_GHE],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<BKSP>)]
++    };
++    key <AD08> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [Cyrillic_sha,    Cyrillic_SHA],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<UP>)]
++    };
++    key <AD09> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [Cyrillic_shcha,  Cyrillic_SHCHA],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<DELE>)]
++    };
++    key <AD10> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [Cyrillic_ze,     Cyrillic_ZE],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<PGUP>)]
++    };
+     key <AD11> { [       Cyrillic_ha,       Cyrillic_HA  ] };
+     key <AD12> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN  ] };
+ 
+@@ -61,10 +77,26 @@
+     key <AC04> { [        Cyrillic_a,        Cyrillic_A  ] };
+     key <AC05> { [       Cyrillic_pe,       Cyrillic_PE  ] };
+     key <AC06> { [       Cyrillic_er,       Cyrillic_ER  ] };
+-    key <AC07> { [        Cyrillic_o,        Cyrillic_O  ] };
+-    key <AC08> { [       Cyrillic_el,       Cyrillic_EL  ] };
+-    key <AC09> { [       Cyrillic_de,       Cyrillic_DE  ] };
+-    key <AC10> { [      Cyrillic_zhe,      Cyrillic_ZHE  ] };
++    key <AC07> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [Cyrillic_o,    Cyrillic_O],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<LEFT>)]
++    };
++    key <AC08> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [Cyrillic_el,     Cyrillic_EL],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<DOWN>)]
++    };
++    key <AC09> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [Cyrillic_de,     Cyrillic_DE],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<RGHT>)]
++    };
++    key <AC10> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [Cyrillic_zhe,    Cyrillic_ZHE],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<PGDN>)]
++    };
+     key <AC11> { [        Cyrillic_e,        Cyrillic_E  ] };
+ 
+     key <AB01> { [       Cyrillic_ya,       Cyrillic_YA  ] };
+@@ -73,8 +105,16 @@
+     key <AB04> { [       Cyrillic_em,       Cyrillic_EM  ] };
+     key <AB05> { [        Cyrillic_i,        Cyrillic_I  ] };
+     key <AB06> { [       Cyrillic_te,       Cyrillic_TE  ] };
+-    key <AB07> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN  ] };
+-    key <AB08> { [       Cyrillic_be,       Cyrillic_BE  ] };
++    key <AB07> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [Cyrillic_softsign, Cyrillic_SOFTSIGN],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<HOME>)]
++    };
++    key <AB08> {
++    type = "ALPHABETIC_CAPS_ARROW",
++    [Cyrillic_be,     Cyrillic_BE],
++        actions[Group1]=[NoAction(), NoAction(), RedirectKey(key=<END>)]
++    };
+     key <AB09> { [       Cyrillic_yu,       Cyrillic_YU  ] };
+ 
+     include "kpdl(comma)"

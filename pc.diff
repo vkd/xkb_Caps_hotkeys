@@ -1,0 +1,20 @@
+--- /usr/share/X11/xkb_bak/symbols/pc	2016-12-06 00:08:06.700917321 +0300
++++ /usr/share/X11/xkb/symbols/pc	2016-12-06 00:11:09.153586333 +0300
+@@ -19,7 +19,7 @@
+     key  <TAB> {	[ Tab,	ISO_Left_Tab	]	};
+     key <RTRN> {	[ Return		]	};
+ 
+-    key <CAPS> {	[ Caps_Lock		]	};
++    key <CAPS> {	symbols[Group1] = [ ISO_Level3_Shift ]	};
+     key <NMLK> {	[ Num_Lock 		]	};
+ 
+     key <LFSH> {	[ Shift_L		]	};
+@@ -41,7 +41,7 @@
+     // Fake keys for virtual<->real modifiers mapping:
+     key <LVL3> {	[ ISO_Level3_Shift	]	};
+     key <MDSW> {	[ Mode_switch 		]	};
+-    modifier_map Mod5   { <LVL3>, <MDSW> };
++    modifier_map Mod5   { <LVL3>, <MDSW>, ISO_Level3_Shift };
+ 
+     key <ALT>  {	[ NoSymbol, Alt_L	]	};
+     include "altwin(meta_alt)"
