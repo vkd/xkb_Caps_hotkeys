@@ -3,7 +3,11 @@ xkb_Caps_hotkeys
 
 Hotkeys CapsLock + ijk; => Up, Left, Down, Right
 
-for Ubuntu 14.04
+-
+
+Update for Xubuntu/Ubuntu 16.10:
+1. Run ./update_xkb.sh
+2. Restart system
 
 -
 
@@ -45,7 +49,7 @@ keysym semicolon = semicolon colon Next NoSymbol lstroke Lstroke
 ```
 Apply changes:
 ```
-xmodmap ./.Xmodmap 
+xmodmap ./.Xmodmap
 ```
 
 This settings reset after change keyboard layout
