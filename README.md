@@ -6,6 +6,7 @@ Hotkeys CapsLock + ijk; => Up, Left, Down, Right
 -
 
 Update for Xubuntu/Ubuntu 16.10:
+
 1. Run ./update_xkb.sh
 2. Restart system
 
